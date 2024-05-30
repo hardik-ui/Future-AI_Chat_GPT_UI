@@ -24,25 +24,22 @@ const ConversationPanel = ({ messages, selectedChat }) => {
         </Typography>
         {messages.map((message, index) => (
           <Box key={index} sx={{ marginBottom: "1em" }}>
-            <Typography
-              variant="body1"
-              color="textPrimary"
-
-            >
-             <IconButton>
-                      {message.sender === "User" ? (
-                        <AccountCircleIcon />
-                      ) : (
-                        <StarIcon />
-                      )}
-                    </IconButton> {message.text}
+            <Typography variant="body1" color="textPrimary">
+              <IconButton>
+                {message.sender === "User" ? (
+                  <AccountCircleIcon />
+                ) : (
+                  <StarIcon />
+                )}
+              </IconButton>{" "}
+              {message.text}
             </Typography>
           </Box>
         ))}
       </Box>
       <Box sx={{ flexGrow: 1, display: "flex", flexDirection: "column" }}>
         <IconButton>
-          <MoreHorizIcon color="black" sx={{paddingRight: "10px"}} />
+          <MoreHorizIcon color="black" sx={{ paddingRight: "10px" }} />
           <UploadIcon />
         </IconButton>
       </Box>
