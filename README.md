@@ -34,4 +34,6 @@
 ## Features
 
 - Users can send a message and get responses.
-- Clicking on the + button creates a new chat (UI only, no functionality).
+- The backend fast api returns a placeholder reponse for every promot (`Echo promt`)
+- Clicking on the + button creates a new chat (chat data is not retained in the backend so refreshes everytime browser is refreshed).
+- Used Material UI for saving time by utilising prepared components and CSS properties.
